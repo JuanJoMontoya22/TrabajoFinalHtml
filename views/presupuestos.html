@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos - AutoMotores</title>
+    <link rel="stylesheet" href="../styles/estilos.css">
+</head>
+<body>
+    <!--HEADER Y NAVEGACIÓN -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../Index.html" class="logo">AutoMotores</a>
+                <ul>
+                    <li><a href="../Index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./presupuestos.html" class="active">Presupuestos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN FORMULARIO DE PRESUPUESTO -->
+    <section id="presupuesto">
+        <div class="container">
+            <h1 class="text-center mb-20">Solicitar Presupuesto</h1>
+            
+            <!-- Formulario -->
+            <form>
+                <!-- Campo Nombre -->
+                <label for="nombre"><strong>Nombre:</strong></label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,}" 
+                    placeholder="Ingrese su nombre completo" 
+                    required>
+
+                <!-- Campo Email -->
+                <label for="email"><strong>Email:</strong></label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" 
+                    placeholder="correo@ejemplo.com" 
+                    required>
+
+                <!-- Campo Teléfono -->
+                <label for="telefono"><strong>Teléfono:</strong></label>
+                <input 
+                    type="tel" 
+                    id="telefono" 
+                    name="telefono" 
+                    pattern="[0-9]{7,15}" 
+                    placeholder="123456789" 
+                    required>
+
+                <!-- Campo Solicitar más información -->
+                <label for="mensaje"><strong>Solicite más información:</strong></label>
+                <textarea 
+                    id="mensaje" 
+                    name="mensaje" 
+                    placeholder="Cuéntenos sobre el vehículo que busca..." 
+                    required></textarea>
+
+                <!-- Checkbox Política de Privacidad -->
+                <div class="checkbox">
+                    <input 
+                        type="checkbox" 
+                        id="privacidad" 
+                        name="privacidad" 
+                        required>
+                    <label for="privacidad">Acepto la <strong>Política de Privacidad</strong> de AutoMotores</label>
+                </div>
+
+                <!-- Botón Enviar -->
+                <button type="submit" class="btn">Enviar Presupuesto</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a>
+                    <img src="../assets/logo1.webp" alt="Instagram" width="30" height="30">
+                </a>
+                <a>
+                    <img src="../assets/logo2.webp" alt="Facebook" width="30" height="30">
+                </a>
+            </div>
+            <p><strong>AutoMotores</strong> - Av. Principal 123, Ciudad - Teléfono: (123) 456-7890</p>
+            <p>&copy; 2024 AutoMotores. Todos los derechos reservados. <a href="#" style="color: #00aaff;">Aviso Legal</a></p>
+        </div>
+    </footer>
+</body>
+</html>
