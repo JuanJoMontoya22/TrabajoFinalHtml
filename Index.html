@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia de Automotores</title>
+
+    <meta name="description" content="AutoMotores - Agencia de automotores especializada en vehículos nuevos y seminuevos con asesoramiento personalizado.">
+
     <link rel="stylesheet" href="./styles/estilos.css">
 </head>
 <body>
-    <!-- HEADER Y NAVEGACIÓN -->
     <header>
         <div class="container">
             <nav>
                 <a href="./index.html" class="logo">AutoMotores</a>
                 <ul>
-                    <li><a href="./index.html" class="active">Inicio</a></li>
+                    <li><a href="./index.html" aria-current="page">Inicio</a></li>
                     <li><a href="./views/productos.html">Productos</a></li>
                     <li><a href="./views/presupuestos.html">Presupuestos</a></li>
                     <li><a href="./views/contacto.html">Contacto</a></li>
@@ -22,58 +24,78 @@
         </div>
     </header>
 
-    <!-- SECCIÓN HERO -->
-    <section id="hero" class="text-center">
-        <div class="container">
-            <h1>Bienvenido a AutoMotores</h1>
-            <p>Tu agencia de confianza para encontrar el vehículo perfecto</p>
-            <a href="./views/productos.html" class="btn mt-20">Ver Catálogo</a>
-        </div>
-    </section>
-
-    <!-- SECCIÓN CARACTERÍSTICAS -->
-    <section id="caracteristicas">
-        <div class="container">
-            <h2 class="text-center mb-20">¿Por qué elegirnos?</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Vehículos de Calidad</h3>
-                    <p>Contamos con una amplia selección de vehículos nuevos y seminuevos de las mejores marcas del mercado.</p>
-                </div>
-                <div class="card">
-                    <h3>Precios Competitivos</h3>
-                    <p>Ofrecemos los mejores precios del mercado con opciones de financiamiento flexibles.</p>
-                </div>
-                <div class="card">
-                    <h3>Servicio Profesional</h3>
-                    <p>Nuestro equipo te acompañará en todo el proceso de compra con atención personalizada.</p>
+    <main>
+        <section id="hero" class="text-center">
+            <div class="container">
+                <p class="eyebrow">Agencia de automotores especializada</p>
+                <h1>Bienvenido a AutoMotores</h1>
+                <p>Encontrá el vehículo que se adapta a tu estilo, presupuesto y día a día con asesoramiento cercano y transparente.</p>
+                <div class="hero-actions">
+                    <a href="./views/productos.html" class="btn">Ver Catálogo</a>
+                    <a href="./views/presupuestos.html" class="btn btn-secondary">Solicitar Presupuesto</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SECCIÓN LLAMADA A LA ACCIÓN -->
-    <section id="cta" class="text-center">
-        <div class="container">
-            <h2>¿Necesitas un presupuesto?</h2>
-            <p>Solicita información sin compromiso, nuestro equipo se pondrá en contacto contigo</p>
-            <a href="./views/presupuestos.html" class="btn mt-20">Solicitar Presupuesto</a>
-        </div>
-    </section>
+        <section id="nosotros">
+            <div class="container about-grid">
+                <div>
+                    <h2>Más que una compra, una experiencia confiable</h2>
+                    <p>Desde hace años acompañamos a personas y familias en la búsqueda de vehículos seguros, modernos y con excelente relación precio-calidad.</p>
+                    <p>Nuestro equipo revisa cada opción para ofrecerte alternativas reales, asesoramiento sin presión y un proceso claro desde el primer contacto.</p>
+                </div>
+                <div class="info-card">
+                    <h3>¿Qué te ofrecemos?</h3>
+                    <ul class="check-list">
+                        <li>Selección de modelos nuevos y seminuevos</li>
+                        <li>Asesoramiento personalizado en cada etapa</li>
+                        <li>Financiamiento flexible y seguimiento cercano</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- FOOTER -->
+        <section id="caracteristicas">
+            <div class="container">
+                <h2 class="text-center mb-20">¿Por qué elegirnos?</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Vehículos de Calidad</h3>
+                        <p>Contamos con una amplia selección de vehículos nuevos y seminuevos de las mejores marcas del mercado.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Precios Competitivos</h3>
+                        <p>Ofrecemos opciones de financiamiento flexibles y condiciones transparentes para que tu compra sea más sencilla.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Servicio Profesional</h3>
+                        <p>Nuestro equipo te acompañará en todo el proceso de compra con atención personalizada y orientación real.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="text-center">
+            <div class="container">
+                <h2>¿Necesitas un presupuesto?</h2>
+                <p>Solicita información sin compromiso y nuestro equipo se pondrá en contacto contigo para ayudarte a encontrar el vehículo ideal.</p>
+                <a href="./views/presupuestos.html" class="btn mt-20">Solicitar Presupuesto</a>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
             <div class="social">
-                <a>
-                    <img src="./assets/logo1.webp" alt="Instagram" width="30" height="30">
+                <a href="#">
+                    <img src="./assets/logo1.webp" alt="Logo Instagram" width="30" height="30" loading="lazy">
                 </a>
-                <a>
-                    <img src="./assets/logo2.webp" alt="Facebook" width="30" height="30">
+                <a href="#">
+                    <img src="./assets/logo2.webp" alt="Logo Facebook" width="30" height="30" loading="lazy">
                 </a>
             </div>
             <p><strong>AutoMotores</strong> - Av. Principal 123, Ciudad - Teléfono: (123) 456-7890</p>
-            <p>&copy; 2024 AutoMotores. Todos los derechos reservados. <a href="#" style="color: #00aaff;">Aviso Legal</a></p>
+            <p>&copy; 2024 AutoMotores. Todos los derechos reservados. <a href="#">Aviso Legal</a></p>
         </div>
     </footer>
 </body>
